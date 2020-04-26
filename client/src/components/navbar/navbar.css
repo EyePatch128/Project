@@ -1,0 +1,170 @@
+
+
+/* Phone Navbar toggle div */
+.navbar .nav-toggle{
+	display: none;
+}
+
+/* navbar */
+.navbar{
+	--navbar-item-color: #DDD;
+	
+	height: 19vh;
+	padding: 0.7em 0 !important;
+}
+
+.navbar .navbar-div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+.navbar .navbar-div ul{
+	display : flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.navbar .navbar-div ul li div{
+	position: relative;
+	height: 8em;
+	width: 8em;
+}
+
+/* navbar items */
+.navbar .navbar-div ul li div a{
+	color: var(--navbar-item-color);
+	font-family: "Montserrat";
+	font-size: 1.15em;
+	letter-spacing: 0.2em;
+	position: absolute;	
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+.navbar .navbar-div ul li div a:hover{
+	text-decoration: none;
+}
+
+.navbar .navbar-div ul li div a::after{
+	content: "";
+	position: absolute;
+	left: 5%;
+	display: block;
+	height: 2px;
+	width: 90%;
+	background-color: var(--navbar-item-color);
+	transform: scale(0, 1);
+	transition: 0.2s;
+	
+}
+
+.navbar .navbar-div ul li div a:hover::after{
+	transform: scale(1,1);
+}
+
+/* navbar item World*/
+.navbar .navbar-div ul .world-item div{
+	border: 3px solid var(--navbar-item-color);
+	border-radius: 50%;
+	transition: 0.15s;
+}
+
+.navbar .navbar-div ul .world-item div:hover{
+	border: 6px solid var(--navbar-item-color);
+}
+
+
+/* tablets */
+@media only screen and (max-width: 1024px){
+	.navbar{
+		height: 15vh;
+	}
+
+	.navbar .navbar-div ul li div{
+		height: 6em;
+		width: 6em;
+	}
+	.navbar .navbar-div{
+		width: 50%;
+	}
+
+	/* navbar items */
+	.navbar .navbar-div ul li div a{
+		font-size: 1em;
+		letter-spacing: 0.1em;
+	}
+}
+
+
+/* Phones */
+@media only screen and (max-width: 720px){
+	
+	.navbar{
+		height: 100%;
+		transition: 1s;	
+		padding: 0.1em 0 !important;
+		width: 100vw;
+
+	}
+	/* Arrow */
+	.navbar .nav-toggle{
+		position: relative;
+		width: 100%;
+		margin-left: 0;
+		display: block;
+		text-align: center;
+		transition: 0.5s;
+	}
+	.navbar .nav-toggle button{
+		background: transparent;
+		text-align: center;
+		margin-left: auto;
+		border: none;
+	}
+	.navbar .nav-toggle button #Arrow path{
+		fill: var(--navbar-item-color);	
+	}
+	
+	/* list */
+	.navbar .navbar-div{
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+		margin-top: -50vh;
+		transition: 0.5s;
+	}
+	
+	/* ul item block */
+	.navbar .navbar-div ul{
+		display: block;
+		padding: 1em;
+	}
+	.navbar .navbar-div ul li div{
+		border: none;
+		width: 100%;
+		text-align: center;
+		margin: 0.5em 0 0 0;
+	}
+	.navbar .navbar-div ul .world-item div{
+		border: none;
+		border-top: 3px solid var(--navbar-item-color);
+		border-bottom: 3px solid var(--navbar-item-color);
+		border-radius: 0;
+	}
+	.navbar .navbar-div ul li div a{
+		color: var(--navbar-item-color);
+		font-family: "Montserrat";
+		font-size: 1.5em;
+		letter-spacing: 0.2em;
+	}
+	
+	/* Navbar Toggle animation */
+	.navDown{
+		margin-top: 0 !important;
+	}
+	.arrow-rot{
+		transform: rotate(180deg);
+	}
+}

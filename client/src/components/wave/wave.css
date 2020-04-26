@@ -1,0 +1,21 @@
+.wave-bg{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	z-index: -1;
+}
+
+.wave-bg svg{
+	width: 100%;
+}
+
+.wave-bg svg path{
+	fill: rgba(170, 204, 255, 0.15)
+}
+
+@media only screen and (max-width: 1024px){
+	.wave-bg{
+		display: none;
+	}
+}

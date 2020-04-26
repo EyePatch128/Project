@@ -1,0 +1,233 @@
+.city{
+	background: rgb(2,0,36);
+	background: linear-gradient(360deg, rgba(2,0,36,0.3) 0%, rgba(82,82,101,0.2) 40%, rgba(255,255,255,0.4) 100%);
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 1px solid transparent;
+	font-family: 'Poppins';
+}
+/* On form submit */
+.onResults-search-form-container{
+	margin-top: 3% !important;
+}
+/* On form submit */
+.animated-search-form{
+	width: 50% !important;
+}
+
+/* Search Form Styles*/
+.city .search-form-container{
+	width: 100%;
+	margin-top: 20%;
+	text-align: center;	 
+	transition: 0.5s;
+}
+.city .search-form-container form{
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: auto;
+	height: 4em;
+	width: 35%;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 34px;
+	transition: 0.5s;
+	border: 1.5px solid #F5FFFA;
+}
+.city .search-form-container form input{
+	width: 42%;
+	height: 100%;
+	font-size: 1.5em;
+	padding-bottom: 0.1em;
+	padding-left: 0.2em;
+	color: #F5FFFA;
+	letter-spacing: 0.1em;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.city .search-form-container form input[placeholder= "City"]{
+	border-left: 2.5px solid white;
+	padding-left: 0.5em;
+}
+.city .search-form-container form button{
+	border: none;
+	background: transparent;
+	border: none;
+}
+.city .search-form-container form button svg{
+	transform: scale(1.75);
+}
+.city .search-form-container form button svg path{
+	fill: #F5FFFA;
+}
+
+.searched-city{
+	font-family: Poppins;
+	text-align: center;
+	margin-top: 3em;
+	color: #F5FFFA;
+}
+
+
+/* Info display */
+/* >> Animation */
+@keyframes animateErrorInfo{
+	
+	0%{
+		transform: translate(-50%, -50%) scale(0);
+	}
+	70%{
+		transform: translate(-50%, -50%) scale(1.03);
+	}
+	100%{
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+.animated-error-info{
+	-webkit-animation: animateErrorInfo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: animateErrorInfo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes animateSuccessInfo{
+	
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.animated-success-info{
+	-webkit-animation: animateSuccessInfo 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: animateSuccessInfo 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* >> Success */
+.city .onResults{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* opacity: 0; */
+	transition: 0.5s;
+}
+/* >> Delete button */
+.city .delete-btn-container{
+	position: absolute;
+	left: 80%;
+	z-index: 1;
+}
+.city .delete-btn-container button{
+	background: transparent;
+	border: none;
+	opacity: 0.4;
+	cursor: poitner;
+}
+.city .onResults .info-container{
+	position: relative;
+	display: grid;
+	grid-gap: 3em 7em;
+	grid-template-columns: 1fr 1fr	;
+	grid-template-rows: 1fr 1fr;
+	justify-content: space-around;
+	align-content: space-evenly;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 70%;
+	height: 73%;
+	margin: -0.5em auto 0 auto;
+	padding: 2em 3em;
+}
+.city .onResults .info-container .info{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.city .onResults .info-container .info span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(2);
+	display: inline;
+	font-size: 4vw;
+	font-weight: 200;
+	font-family: "Poppins-Light";
+	color: #F5FFFA;
+}
+.city .onResults .info-container .info-desc svg{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(6);
+	width: 4em;
+	height: 4em;
+}
+/* >> Error */
+.city .onError{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(15, 15, 15, 0.5);
+	transition: 0.5s;
+}
+.city .onError .error-modal{
+	max-width: 60%;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+	padding: 1em;
+}
+.city .onError .error-modal .error-modal-header{
+	border-bottom: 1.5px solid rgb(222, 226, 230);
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+.city .onError .error-modal .error-modal-header .close{
+	margin: 1rem auto auto 5em;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1;
+    color: #dc3545;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.city .onError .error-modal .error-modal-body{
+	padding: 1rem;
+}
+.city .onError .error-modal .error-modal-body span{
+	font-size: 1.1em;
+}
+
+
+@media only screen and (max-width: 1024px){
+	.city .search-form-container form{
+		width: 50%;	
+	}
+	.city .onResults .info-container .info-desc svg{
+		transform: translate(-50%, -50%) scale(4);
+	}
+}
+
+@media only screen and (max-width: 720px){
+	.city .search-form-container form{
+		width: 90% !important;	
+	}
+	
+	/* Info svg scaling */
+	.city .onResults .info-container .info-desc svg{
+		transform: translate(-50%, -50%) scale(3);
+	}
+	
+	/* onError modal */
+	.city .onError .error-modal{
+		max-width: 100% !important;
+	}
+}
+
