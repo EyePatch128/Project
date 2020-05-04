@@ -1,4 +1,5 @@
 # Meteo-App
+Après avoir télecharger le projet
 
 Il faut installer NodeJS et NPM: https://nodejs.org/en/
 
