@@ -11,6 +11,8 @@ Aller dans le dossier du projet
 
 `node server.js` pour allumer le serveur
 
+Dans une autre fenêtre CMD:
+
 `cd client`
 
 `npm install` pour installer tous les modules concernant le côté client
