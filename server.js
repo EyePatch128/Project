@@ -1,5 +1,6 @@
 
 const fs = require("fs");
+const path = require("path")
 const cors = require("cors");
 const express = require("express");
 
@@ -8,7 +9,13 @@ const readline = require('readline');
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.use(cors());
+
+app.get('/*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.get("/capitals", (req, res)=>{
 	

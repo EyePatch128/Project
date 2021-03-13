@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.783158f7.chunk.css",
+    "main.js": "/static/js/main.2a947e53.chunk.js",
+    "main.js.map": "/static/js/main.2a947e53.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f16ea130.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f16ea130.js.map",
+    "static/css/2.c1fb602b.chunk.css": "/static/css/2.c1fb602b.chunk.css",
+    "static/js/2.c32cbda3.chunk.js": "/static/js/2.c32cbda3.chunk.js",
+    "static/js/2.c32cbda3.chunk.js.map": "/static/js/2.c32cbda3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.840b17404ab20f12b1307a8e4c2e2d6e.js": "/precache-manifest.840b17404ab20f12b1307a8e4c2e2d6e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.c1fb602b.chunk.css.map": "/static/css/2.c1fb602b.chunk.css.map",
+    "static/css/main.783158f7.chunk.css.map": "/static/css/main.783158f7.chunk.css.map",
+    "static/js/2.c32cbda3.chunk.js.LICENSE.txt": "/static/js/2.c32cbda3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/Poppins-Regular.41e8dead.ttf",
+    "static/media/container.css": "/static/media/city-section-bg.f19e0d56.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f16ea130.js",
+    "static/css/2.c1fb602b.chunk.css",
+    "static/js/2.c32cbda3.chunk.js",
+    "static/css/main.783158f7.chunk.css",
+    "static/js/main.2a947e53.chunk.js"
+  ]
+}
